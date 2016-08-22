@@ -1,0 +1,23 @@
+// 
+// SIDEBAR MENU
+// 
+
+.sidebar
+  float: left
+  position: fixed
+  width: 70px
+  height: 100vh
+  padding: 10px
+  padding-top: $top-height
+  background-color: #fff
+  +shadow()
+  &__menu
+    margin-top: 5px
+  &__menu-link
+    display: block
+    margin-bottom: 20px
+    +hide-text()
+    +size(50px)
+    +round(3px)
+    &:hover
+      background-color: $background-color

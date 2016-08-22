@@ -1,0 +1,59 @@
+// 
+// TOP HEADER
+// 
+
+.top
+  color: #fff
+  background-color: $primary-color
+  position: fixed
+  width: 100%
+  z-index: 9999
+  padding: 14px 100px 14px 14px
+  +shadow(0.4)
+  &__menu
+    float: left
+    padding: 10px 5px
+    +hide-text()
+    +size(42px)
+    &:hover
+      cursor: pointer
+      opacity: 0.4
+  &__search
+    @extend .top__menu
+    float: right
+    margin-right: 10px
+  &__account
+    float: right
+
+.account
+  &__avatar
+    float: left
+    overflow: hidden
+    +size(42px)
+    +round()
+  &__link
+    display: block
+    width: 100%
+    height: 100%
+    color: inherit
+    &:hover
+      opacity: 0.6
+  &__name, &__status
+    margin-left: 65px
+  &__name
+    font-size: 15px
+    font-weight: bold
+    line-height: 25px
+    letter-spacing: 0.25px
+  &__status
+    color: #2775a9
+    font-size: 12px
+    position: relative
+    &:hover
+      color: #fff
+  &__dropdown
+    position: absolute
+    right: 0
+    top: 4px
+    &:hover
+      opacity: 0.4

@@ -1,0 +1,73 @@
+//
+//  DEFAULTS
+//
+
+$font-family: Lato, sans-serif
+$font-size: 12px
+$primary-color: #3498db
+$background-color: #f5f6f8
+$text-color: #8ea1b4
+
+$clnd-grid: 30px
+$clnd-gap: 8px
+
+$top-height: 70px
+$chathead-height: 61px
+$chat-padding: 40px
+$calendar-height: 278px
+$footer-height: 67px
+$type-height: 60px
+
+=size($size)
+  width: $size
+  height: $size
+
+=round($radius: 50%)
+  border-radius: $radius
+
+=bg-center($url)
+  background: url($url) center center no-repeat
+
+=shadow($opacity: 0.1)
+  box-shadow: 0 5px 30px rgba(52, 152, 219, $opacity)
+
+=hide-text()
+  text-indent: -1000px
+  overflow: hidden
+
+=crop-text()
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+  
+*,
+*:after,
+*:before
+  box-sizing: border-box
+
+.clearfix:before,
+.clearfix:after
+  content: ''
+  display: table 
+
+.clearfix:after
+  clear: both
+
+body
+  font: $font-size $font-family
+  letter-spacing: 1.4px
+  color: $text-color
+  background-color: $background-color
+  // height: 100vh
+  // width: 100vw
+
+a,
+a:hover,
+a:visited,
+a:active,
+a:focus
+  text-decoration: none
+  cursor: pointer
+
+table
+  border-collapse: collapse

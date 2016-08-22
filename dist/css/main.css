@@ -1,0 +1,656 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.icon {
+  background: url("../img/sprite/sprites.png") no-repeat; }
+
+.icon-search {
+  background-position: -54px -2px;
+  width: 22px;
+  height: 22px; }
+
+.icon-videocall {
+  background-position: -66px -63px;
+  width: 18px;
+  height: 20px; }
+
+.icon-chart {
+  background-position: -102px -99px;
+  width: 22px;
+  height: 22px; }
+
+.icon-settings {
+  background-position: -149px -102px;
+  width: 19px;
+  height: 18px; }
+
+.icon-attach {
+  background-position: -156px -56px;
+  width: 11px;
+  height: 22px; }
+
+.icon-send {
+  background-position: -200px -57px;
+  width: 21px;
+  height: 18px; }
+
+.icon-call {
+  background-position: -18px -65px;
+  width: 17px;
+  height: 19px; }
+
+.icon-next {
+  background-position: -170px -15px;
+  width: 11px;
+  height: 20px; }
+
+.icon-back {
+  background-position: -116px -15px;
+  width: 11px;
+  height: 20px; }
+
+.icon-chat {
+  background-position: -52px -102px;
+  width: 23px;
+  height: 16px; }
+
+.icon-home {
+  background-position: -6px -102px;
+  width: 23px;
+  height: 22px; }
+
+.icon-dot-menu {
+  background-position: -113px -63px;
+  width: 5px;
+  height: 19px; }
+
+.icon-menu {
+  background-position: -6px -2px;
+  width: 25px;
+  height: 19px; }
+
+.icon-down-arrow-small {
+  background-position: -220px -23px;
+  width: 10px;
+  height: 5px; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato-regular-webfont.eot");
+  src: url("../fonts/lato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-regular-webfont.woff2") format("woff2"), url("../fonts/lato-regular-webfont.woff") format("woff"), url("../fonts/lato-regular-webfont.ttf") format("truetype"), url("../fonts/lato-regular-webfont.svg#latoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato-bold-webfont.eot");
+  src: url("../fonts/lato-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-bold-webfont.woff2") format("woff2"), url("../fonts/lato-bold-webfont.woff") format("woff"), url("../fonts/lato-bold-webfont.ttf") format("truetype"), url("../fonts/lato-bold-webfont.svg#latobold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+body {
+  font: 12px Lato, sans-serif;
+  letter-spacing: 1.4px;
+  color: #8ea1b4;
+  background-color: #f5f6f8; }
+
+a,
+a:hover,
+a:visited,
+a:active,
+a:focus {
+  text-decoration: none;
+  cursor: pointer; }
+
+table {
+  border-collapse: collapse; }
+
+.wrapper {
+  min-width: 1024px;
+  margin: 0 auto; }
+
+.top {
+  color: #fff;
+  background-color: #3498db;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  padding: 14px 100px 14px 14px;
+  box-shadow: 0 5px 30px rgba(52, 152, 219, 0.4); }
+  .top__menu, .top__search {
+    float: left;
+    padding: 10px 5px;
+    text-indent: -1000px;
+    overflow: hidden;
+    width: 42px;
+    height: 42px; }
+    .top__menu:hover, .top__search:hover {
+      cursor: pointer;
+      opacity: 0.4; }
+  .top__search {
+    float: right;
+    margin-right: 10px; }
+  .top__account {
+    float: right; }
+
+.account__avatar, .dialog__photo, .message__photo {
+  float: left;
+  overflow: hidden;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%; }
+
+.account__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit; }
+  .account__link:hover {
+    opacity: 0.6; }
+
+.account__name, .account__status {
+  margin-left: 65px; }
+
+.account__name {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 25px;
+  letter-spacing: 0.25px; }
+
+.account__status {
+  color: #2775a9;
+  font-size: 12px;
+  position: relative; }
+  .account__status:hover {
+    color: #fff; }
+
+.account__dropdown {
+  position: absolute;
+  right: 0;
+  top: 4px; }
+  .account__dropdown:hover {
+    opacity: 0.4; }
+
+.sidebar {
+  float: left;
+  position: fixed;
+  width: 70px;
+  height: 100vh;
+  padding: 10px;
+  padding-top: 70px;
+  background-color: #fff;
+  box-shadow: 0 5px 30px rgba(52, 152, 219, 0.1); }
+  .sidebar__menu {
+    margin-top: 5px; }
+  .sidebar__menu-link {
+    display: block;
+    margin-bottom: 20px;
+    text-indent: -1000px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 3px; }
+    .sidebar__menu-link:hover {
+      background-color: #f5f6f8; }
+
+.main-content {
+  padding-top: 70px;
+  padding-left: 70px; }
+
+.chatlist-wrapper {
+  padding: 20px 30px;
+  float: left;
+  width: 28%; }
+
+.chatlist {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 5px 30px rgba(52, 152, 219, 0.1); }
+  .chatlist__header, .agenda__header {
+    margin: 0 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ecf0f2; }
+  .chatlist__title {
+    float: left;
+    color: #3498db;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 40px; }
+  .chatlist__new-button {
+    float: right;
+    color: #8ea1b4;
+    background-color: #d6e3ec;
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 3px; }
+    .chatlist__new-button:hover {
+      background-color: #e7eff4; }
+  .chatlist__content {
+    height: calc(100vh - 70px - 61px - 40px);
+    min-height: 467px;
+    overflow-y: auto;
+    margin-top: -1px; }
+  .chatlist__item-dialog {
+    padding: 14px;
+    cursor: pointer;
+    position: relative; }
+    .chatlist__item-dialog--active {
+      background-color: #f5f6f8; }
+    .chatlist__item-dialog:hover {
+      background-color: #f2f2f2; }
+    .chatlist__item-dialog--shaded .dialog__name {
+      color: #8ea1b4; }
+    .chatlist__item-dialog--shaded .dialog__preview {
+      color: #c9d6df; }
+    .chatlist__item-dialog--notify:before {
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 16px;
+      position: absolute;
+      top: 10px;
+      left: 40px;
+      display: block;
+      overflow: hidden;
+      width: 20px;
+      height: 20px;
+      padding: 2px;
+      content: attr(data-notify);
+      text-align: center;
+      text-overflow: ellipsis;
+      color: #fff;
+      background-color: #3198db;
+      box-shadow: 0 2px 10px rgba(49, 152, 219, 0.5);
+      border-radius: 50%; }
+
+.dialog__photo {
+  margin-right: 10px; }
+
+.dialog__data {
+  float: left;
+  letter-spacing: 0px;
+  width: calc(100% - 42px - 12px); }
+
+.dialog__name {
+  position: relative;
+  color: #34495e;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 25px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 13px; }
+
+.dialog__status {
+  position: absolute;
+  right: 2px;
+  top: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #d4e1ea;
+  box-shadow: 0 1px 5px #c9d6df; }
+  .dialog__status--online {
+    background-color: #51dacf;
+    box-shadow: 0 2px 4px #51dacf; }
+
+.dialog__preview {
+  font-size: 12px; }
+  .dialog__preview--text {
+    float: left;
+    width: 60%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  .dialog__preview--time {
+    color: #c9d6df;
+    float: right; }
+
+.chat {
+  position: relative;
+  float: left;
+  width: calc(100% - 20px - 28% - 390px);
+  margin: 20px 0 0 0; }
+  .chat__header {
+    padding: 10px 0;
+    border-bottom: 1px solid #ecf0f2; }
+  .chat__title, .agenda__title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 60%;
+    float: left;
+    color: #16315c;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: -0.7px; }
+  .chat__content {
+    height: calc(100vh - 70px - 61px - 40px - 60px);
+    min-height: 407px;
+    overflow-y: auto; }
+  .chat__status {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: #d4e1ea;
+    box-shadow: 0 1px 5px #c9d6df; }
+    .chat__status--online {
+      background-color: #51dacf;
+      box-shadow: 0 2px 4px #51dacf; }
+  .chat__menu {
+    float: right;
+    line-height: 40px; }
+  .chat__menu-item {
+    display: inline-block;
+    vertical-align: middle; }
+  .chat__menu-link, .agenda__menu-link {
+    display: block;
+    text-indent: -1000px;
+    overflow: hidden;
+    margin: 0 5px;
+    opacity: 1;
+    width: 20px;
+    height: 20px; }
+    .chat__menu-link:hover, .agenda__menu-link:hover {
+      opacity: 0.6; }
+  .chat__message {
+    margin: 15px 0; }
+
+.message__text {
+  position: relative;
+  float: left;
+  max-width: 60%;
+  margin: 0 25px;
+  padding: 13px;
+  color: #8ea1b4;
+  background-color: #fff;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  border-radius: 20px; }
+  .message__text:before {
+    position: absolute;
+    left: -7px;
+    top: 16px;
+    content: '';
+    background-color: inherit;
+    display: block;
+    width: 20px;
+    height: 10px;
+    border-radius: 50%; }
+
+.chat__message--me .message__photo {
+  float: right; }
+
+.chat__message--me .message__text {
+  float: right;
+  color: #fefefe;
+  background-color: #3598db; }
+  .chat__message--me .message__text:before {
+    left: auto;
+    right: -7px; }
+
+.type-msg {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 5px 30px rgba(52, 152, 219, 0.05); }
+  .type-msg__input {
+    text-indent: 5px;
+    float: left;
+    width: calc(100% - 40px - 40px);
+    box-sizing: border-box;
+    font: inherit;
+    height: 40px;
+    outline: none;
+    border: none; }
+  .type-msg__attach-btn {
+    float: left;
+    vertical-align: middle;
+    text-indent: -1000px;
+    overflow: hidden;
+    width: 35px;
+    height: 40px;
+    border-radius: 3px;
+    cursor: pointer; }
+    .type-msg__attach-btn:hover {
+      background-color: #f5f6f8; }
+  .type-msg__send-btn {
+    float: right;
+    text-indent: -1000px;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #3498db;
+    box-shadow: 0 3px 15px rgba(53, 152, 219, 0.3); }
+    .type-msg__send-btn:hover {
+      background-color: #258cd1; }
+
+.agenda-wrapper {
+  padding: 20px 30px;
+  float: right; }
+
+.agenda {
+  position: relative;
+  width: 350px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 30px rgba(52, 152, 219, 0.1); }
+  .agenda__title {
+    color: #3498db; }
+  .agenda__menu-link {
+    float: right;
+    margin: 10px; }
+  .agenda__events {
+    margin: 0 15px;
+    padding-top: 15px;
+    letter-spacing: 0;
+    border-top: 1px solid #edf0f2;
+    height: calc(100vh - 70px  - 61px  - 40px  - 278px - 67px);
+    min-height: 120px;
+    overflow-y: auto; }
+  .agenda__footer {
+    padding: 10px 15px;
+    width: 100%;
+    border-top: 1px solid #edf0f2; }
+  .agenda__add-new-btn {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 3px; }
+    .agenda__add-new-btn:hover {
+      background-color: #f5f6f8; }
+
+.calendar {
+  font-size: 14px;
+  margin: 0 auto 24px auto; }
+  .calendar__month {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #34495e; }
+  .calendar__month-title {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.88px; }
+  .calendar__month-btn {
+    display: block;
+    width: 11px;
+    height: 20px;
+    text-indent: -1000px;
+    overflow: hidden; }
+    .calendar__month-btn:hover {
+      opacity: 0.6; }
+    .calendar__month-btn--prev {
+      float: left; }
+    .calendar__month-btn--next {
+      float: right; }
+  .calendar__day-title {
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #8ea1b4; }
+  .calendar__day-w {
+    width: 46px;
+    height: 30px; }
+    .calendar__day-w:hover .calendar__day {
+      color: #8ea1b4;
+      background-color: #f5f6f8;
+      border-radius: 50%; }
+      .calendar__day-w:hover .calendar__day:after, .calendar__day-w:hover .calendar__day:before {
+        display: none; }
+  .calendar__day {
+    margin: 0 auto;
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #34495e;
+    position: relative; }
+    .calendar__day--online:before {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 11px;
+      bottom: 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #51dacf;
+      box-shadow: 0 2px 4px #51dacf; }
+    .calendar__day--off {
+      color: #c9d6df; }
+    .calendar__day--active {
+      position: relative;
+      color: #fff;
+      background-color: #3498db; }
+      .calendar__day--active:before, .calendar__day--active:after {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        background-color: #3498db; }
+      .calendar__day--active:before {
+        left: -8px; }
+      .calendar__day--active:after {
+        right: -8px; }
+    .calendar__day--start {
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px; }
+      .calendar__day--start:before {
+        display: none; }
+    .calendar__day--end {
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px; }
+      .calendar__day--end:after {
+        display: none; }
+
+.events__item {
+  margin-bottom: 11px; }
+
+.events__link {
+  display: block; }
+  .events__link:hover {
+    opacity: 0.7; }
+
+.events__title {
+  color: #34495e;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px; }
+
+.events__text {
+  color: #8ea1b4;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+@media only screen and (min-width: 1024px) {
+  .chat__title, .agenda__title {
+    width: 64%; } }
+
+@media only screen and (min-width: 1280px) {
+  .dialog__preview--text {
+    width: 75%; }
+  .chat__title, .agenda__title {
+    width: 70%; }
+  .chat__menu-link, .agenda__menu-link {
+    margin-left: 10px;
+    margin-right: 10px; } }
+
+@media only screen and (min-width: 1440px) {
+  .message__text {
+    font-size: 130%; }
+  .type-msg__input {
+    font-size: 130%; } }
+
+/*# sourceMappingURL=main.css.map */

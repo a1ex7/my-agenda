@@ -1,0 +1,88 @@
+.icon{
+	background: url('../img/sprite/sprites.png') no-repeat;
+}
+
+.icon-search{
+	background-position: -54px -2px;
+	width: 22px;
+	height: 22px;
+}
+
+.icon-videocall{
+	background-position: -66px -63px ;
+	width: 18px;
+	height: 20px;
+}
+
+.icon-chart{
+	background-position: -102px -99px ;
+	width: 22px;
+	height: 22px;
+}
+
+.icon-settings{
+	background-position: -149px -102px;
+	width: 19px;
+	height: 18px;
+}
+
+.icon-attach{
+	background-position: -156px -56px;
+	width: 11px;
+	height: 22px;
+}
+
+.icon-send{
+	background-position: -200px -57px;
+	width: 21px;
+	height: 18px;
+}
+
+.icon-call{
+	background-position: -18px -65px;
+	width: 17px;
+	height: 19px;
+}
+
+.icon-next{
+	background-position: -170px -15px;
+	width: 11px;
+	height: 20px;
+}
+
+.icon-back{
+	background-position: -116px -15px;
+	width: 11px;
+	height: 20px;
+}
+
+.icon-chat{
+	background-position: -52px -102px;
+	width: 23px;
+	height: 16px;
+}
+
+.icon-home{
+	background-position: -6px -102px;
+	width: 23px;
+	height: 22px;
+}
+
+.icon-dot-menu{
+	background-position: -113px -63px ;
+	width: 5px;
+	height: 19px;
+}
+
+.icon-menu{
+	background-position: -6px -2px;
+	width: 25px;
+	height: 19px;
+}
+
+.icon-down-arrow-small{
+	background-position: -220px -23px;
+	width: 10px;
+	height: 5px;
+}
+

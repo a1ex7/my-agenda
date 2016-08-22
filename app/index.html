@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Agenda</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+
+  <div class="wrapper">
+
+
+<!-- HEADER -->
+
+    <header class="top-head">
+      
+      <div class="top clearfix">
+      <div class="top__menu icon icon-menu" title="Menu"><a href="#menu" class="account__link" title="Menu">Menu</a></div>
+        <div class="top__account">
+          <div class="account clearfix">
+            <div class="account__avatar">
+              <a href="#user" class="account__link" data-userId="2345"><img class="account__img" src="img/user/user-me.jpg" alt="Me"></a>
+            </div>
+            <div class="account__name">
+              <a href="#user" data-UserId="2324" class="account__link">
+                Riko Sapto Dimo
+              </a>
+            </div>
+            <div class="account__status">
+              <a href="#" data-status="available" class="account__link">Available<span class="account__dropdown icon icon-down-arrow-small"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="top__search icon icon-search" title="Search"><a href="#search" class="account__link" title="Search">Search</a></div>
+      </div>
+
+    </header>
+
+<!-- END HEADER -->
+
+
+<!-- SIDEBAR -->
+
+    <nav class="sidebar">
+      <ul class="sidebar__menu">
+        <li class="sidebar__menu-item"><a href="#home" class="sidebar__menu-link icon icon-home" title="Home">home</a></li>
+        <li class="sidebar__menu-item"><a href="#chat" class="sidebar__menu-link icon icon-chat" title="Chat">chat</a></li>
+        <li class="sidebar__menu-item"><a href="#chart" class="sidebar__menu-link icon icon-chart" title="Chart">chart</a></li>
+        <li class="sidebar__menu-item"><a href="#settings" class="sidebar__menu-link icon icon-settings" title="Settings">settings</a></li>
+      </ul>
+    </nav>
+
+<!-- END SIDEBAR -->
+
+
+<!-- MAIN -->
+
+    <main class="main-content clearfix">
+
+<!-- CHATLIST -->
+      
+      <aside class="chatlist-wrapper">
+        <section class="chatlist">
+          <header class="chatlist__header clearfix">
+              <h2 class="chatlist__title">Chat</h2>
+              <a href="#new" class="chatlist__new-button">New</a>
+          </header>
+          <div class="chatlist__content">
+            <ul class="chatlist__list">
+              <li class="chatlist__item-dialog chatlist__item-dialog--notify clearfix" data-userid="2345" data-msgid="4883" data-notify="2">
+                <div class="dialog__photo"><img src="img/user/user-fikri.jpg" alt="User4883"></div>
+                <div class="dialog__data">
+                  <div class="dialog__name">Fikri Ruslandi<span class="dialog__status"></span></div>
+                  <div class="dialog__preview">
+                    <span class="dialog__preview--text">Ko, Kumaha Project anu eta</span>
+                    <time datetime="20:00" class="dialog__preview--time">1 min</time>
+                  </div>
+                </div>
+              </li>
+              <li class="chatlist__item-dialog chatlist__item-dialog--notify clearfix" data-userid="2345" data-msgid="4884" data-notify="3">
+                <div class="dialog__photo"><img src="img/user/user-moch.jpg" alt="User4883"></div>
+                <div class="dialog__data">
+                  <div class="dialog__name">Moch Ramdhani<span class="dialog__status dialog__status--online"></span></div>
+                  <div class="dialog__preview">
+                    <span class="dialog__preview--text">Ane menang contes $1000</span>
+                    <time datetime="20:00" class="dialog__preview--time">2 min</time>
+                  </div>
+                </div>
+              </li>
+              <li class="chatlist__item-dialog chatlist__item-dialog--active clearfix" data-userid="2345" data-msgid="4885">
+                <div class="dialog__photo"><img src="img/user/user-abu.jpg" alt="User4883"></div>
+                <div class="dialog__data">
+                  <div class="dialog__name">Abu Abdullah Nugraha<span class="dialog__status dialog__status--online"></span></div>
+                  <div class="dialog__preview">
+                    <span class="dialog__preview--text">is typing a message ...</span>
+                    <time datetime="20:00" class="dialog__preview--time"></time>
+                  </div>
+                </div>
+              </li>
+              <li class="chatlist__item-dialog chatlist__item-dialog--notify clearfix" data-userid="2345" data-msgid="4888" data-notify="4">
+                <div class="dialog__photo"><img src="img/user/user-muhammad.jpg" alt="User4883"></div>
+                <div class="dialog__data">
+                  <div class="dialog__name">Muhammad Fauzi<span class="dialog__status"></span></div>
+                  <div class="dialog__preview">
+                    <span class="dialog__preview--text">Ko, Minjem sapatu basket jacket</span>
+                    <time datetime="20:00" class="dialog__preview--time">9 min</time>
+                  </div>
+                </div>
+              </li>
+              <li class="chatlist__item-dialog chatlist__item-dialog--shaded clearfix" data-userid="2345" data-msgid="4483">
+                <div class="dialog__photo"><img src="img/user/user-nurman.jpg" alt="User4883"></div>
+                <div class="dialog__data">
+                  <div class="dialog__name">Nurman Tri Gumelar<span class="dialog__status"></span></div>
+                  <div class="dialog__preview">
+                    <span class="dialog__preview--text">Technical meeting lomba jog and some lorem text</span>
+                    <time datetime="20:00" class="dialog__preview--time">9 min</time>
+                  </div>
+                </div>
+              </li>
+              <li class="chatlist__item-dialog chatlist__item-dialog--shaded clearfix" data-userid="2345" data-msgid="4883">
+                <div class="dialog__photo"><img src="img/user/user-bagas.jpg" alt="User4883"></div>
+                <div class="dialog__data">
+                  <div class="dialog__name">Bagas Rhafi<span class="dialog__status dialog__status--online"></span></div>
+                  <div class="dialog__preview">
+                    <span class="dialog__preview--text">Heeh pan si jamar nge dunk </span>
+                    <time datetime="20:00" class="dialog__preview--time">45 min</time>
+                  </div>
+                </div>
+              </li>
+              <li class="chatlist__item-dialog chatlist__item-dialog--shaded clearfix" data-userid="2345" data-msgid="4883">
+                <div class="dialog__photo"><img src="img/user/user-saepul.jpg" alt="User4883"></div>
+                <div class="dialog__data">
+                  <div class="dialog__name">Saepul Rohman<span class="dialog__status"></span></div>
+                  <div class="dialog__preview">
+                    <span class="dialog__preview--text">Heeh wpap na </span>
+                    <time datetime="20:00" class="dialog__preview--time">2 hrs</time>
+                  </div>
+                </div>
+              </li>
+              <li class="chatlist__item-dialog clearfix" data-userid="2345" data-msgid="4883">
+                <div class="dialog__photo"><img src="img/user/user-fikri.jpg" alt="User4883"></div>
+                <div class="dialog__data">
+                  <div class="dialog__name">Fikri Ruslandi<span class="dialog__status"></span></div>
+                  <div class="dialog__preview">
+                    <span class="dialog__preview--text">Ko, Kumaha Project anu eta</span>
+                    <time datetime="20:00" class="dialog__preview--time">1 min</time>
+                  </div>
+                </div>
+              </li>
+              <li class="chatlist__item-dialog chatlist__item-dialog--notify clearfix" data-userid="2345" data-msgid="4883" data-notify="6">
+                <div class="dialog__photo"><img src="img/user/user-muhamad.jpg" alt="User4883"></div>
+                <div class="dialog__data">
+                  <div class="dialog__name">Muhamad Aldiansyah<span class="dialog__status"></span></div>
+                  <div class="dialog__preview">
+                    <span class="dialog__preview--text">Bales tuh ko bisi disetrum</span>
+                    <time datetime="20:00" class="dialog__preview--time">2 hrs</time>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </aside>
+
+
+<!-- CHAT MESSAGE-->
+
+      <section class="chat">
+        <header class="chat__header clearfix">
+          <h2 class="chat__title">Abu Abdullah Nugraha
+            <span class="chat__status chat__status--online"></span>
+          </h2>
+          <nav class="chat__menu">
+            <ul class="chat__menu-list">
+              <li class="chat__menu-item"><a href="#call" class="chat__menu-link icon icon-call">Call</a></li>
+              <li class="chat__menu-item"><a href="#videocall" class="chat__menu-link icon icon-videocall">Videocall</a></li>
+              <li class="chat__menu-item"><a href="#more" class="chat__menu-link icon icon-dot-menu">More...</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="chat__content">
+          <ul class="chat__msg-list">
+            <li data-usrid="2345" data-msgid="3278" class="chat__message clearfix">
+              <div class="message__photo"><img src="img/user/user-abu.jpg" alt="User4883"></div>
+              <div class="message__text">Nanti  kita technical meeting lomba jogja</div>
+            </li>
+            <li data-usrid="2345" data-msgid="3278" class="chat__message chat__message--me clearfix">
+              <div class="message__photo"><img src="img/user/user-me.jpg" alt="User4885"></div>
+              <div class="message__text">Semua satu team ITone yang berangkat ke jogja?</div>
+            </li>
+            <li data-usrid="2345" data-msgid="3278" class="chat__message clearfix">
+              <div class="message__photo"><img src="img/user/user-abu.jpg" alt="User4883"></div>
+              <div class="message__text">
+                Iya,semua kita berangkat pake pesawat biar cepet dari  jakarta 
+                berangkat, terus dari sini kita naik kereta ke jakarta
+              </div>
+            </li>
+            <li data-usrid="2345" data-msgid="3278" class="chat__message chat__message--me clearfix">
+              <div class="message__photo"><img src="img/user/user-me.jpg" alt="User4885"></div>
+              <div class="message__text">Ok,berarti kita beberpa hari disana?</div>
+            </li>
+            <li data-usrid="2345" data-msgid="3278" class="chat__message clearfix">
+              <div class="message__photo"><img src="img/user/user-abu.jpg" alt="User4883"></div>
+              <div class="message__text">Yaiyalah tenang kita tidur di hotel ko</div>
+            </li>
+            <li data-usrid="2345" data-msgid="3278" class="chat__message chat__message--me clearfix">
+              <div class="message__photo"><img src="img/user/user-me.jpg" alt="User4885"></div>
+              <div class="message__text">Sip lumayan seklian jalan jalan, semoga tim kita bisa menang </div>
+            </li>
+            <li data-usrid="2345" data-msgid="3278" class="chat__message clearfix">
+              <div class="message__photo"><img src="img/user/user-abu.jpg" alt="User4883"></div>
+              <div class="message__text">Yaiyalah tenang kita tidur di hotel ko</div>
+            </li>
+          </ul>
+        </div>
+        <div class="type-msg clearfix">
+          <input class="type-msg__input" type="text" placeholder="Type your message...">
+          <span class="type-msg__attach-btn icon icon-attach" title="Attach">Attach</span>
+          <a href="#send" class="type-msg__send-btn icon icon-send" title="Send">Send</a>
+        </div>
+      </section>
+
+
+<!-- MY AGENDA -->
+
+      <aside class="agenda-wrapper">
+        <div class="agenda">
+          <header class="agenda__header clearfix">
+              <h2 class="agenda__title">My Agenda</h2>
+              <a href="#ag-menu" class="agenda__menu-link icon icon-dot-menu">Menu</a>
+          </header>
+          <div class="agenda__calendar">
+            <table class="calendar">
+                <caption class="calendar__month clearfix">
+                  <a class="calendar__month-btn calendar__month-btn--prev icon icon-back" href="#">&lt;</a>
+                  <span class="calendar__month-title">March 2016</span>
+                  <a class="calendar__month-btn calendar__month-btn--next icon icon-next" href="#">&gt;</a>
+                </caption>
+                <thead>
+                  <tr class="calendar__day-of-week">
+                    <th class="calendar__day-title">Su</th>
+                    <th class="calendar__day-title">Mo</th>
+                    <th class="calendar__day-title">Tu</th>
+                    <th class="calendar__day-title">We</th>
+                    <th class="calendar__day-title">Th</th>
+                    <th class="calendar__day-title">Fr</th>
+                    <th class="calendar__day-title">Sa</th>
+                  </tr>
+                </thead>
+                <tr class="calendar__week">
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day calendar__day--off">28</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day calendar__day--off">29</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">1</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">2</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">3</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">4</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">5</a></td>
+                </tr>
+                <tr class="calendar__week">
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">6</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">7</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day calendar__day--active calendar__day--start">8</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day calendar__day--active">9</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day calendar__day--active">10</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day calendar__day--active calendar__day--end">11</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">12</a></td>
+                </tr>
+                <tr class="calendar__week">
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">13</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">14</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">15</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">16</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">17</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">18</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">19</a></td>
+                </tr>
+                <tr class="calendar__week">
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">20</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day calendar__day--active calendar__day--start calendar__day--end">21</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">22</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">23</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">24</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day calendar__day--online">25</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">26</a></td>
+                </tr>
+                <tr class="calendar__week">
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">27</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">28</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">29</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">30</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day">31</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day calendar__day--off">1</a></td>
+                  <td class="calendar__day-w"><a href="#day" data-day="2016-03-08" class="calendar__day calendar__day--off">2</a></td>
+                </tr>
+              </table>
+          </div>
+          <div class="agenda__events">
+            <ul class="events__list">
+              <li class="events__item">
+                <a href="#event" class="events__link" data-eventId="5436">
+                  <time datetime="2015-03-08" class="events__title">8 March</time>
+                  <p class="events__text">Main basket bersama muhammad fauzi dan bagas rh</p>
+                </a>
+              </li>
+              <li class="events__item">
+                <a href="#event" class="events__link" data-eventId="5436">
+                  <time datetime="2015-03-09" class="events__title">9 March</time>
+                  <p class="events__text">Deadline project desain aplikasi $5000</p>
+                </a>
+              </li>
+              <li class="events__item">
+                <a href="#event" class="events__link" data-eventId="5436">
+                  <time datetime="2015-03-10" class="events__title">10 March</time>
+                  <p class="events__text">Meeting ITone persiapan lomba website di jogja dan</p>
+                </a>
+              </li>
+              <li class="events__item">
+                <a href="#event" class="events__link" data-eventId="5436">
+                  <time datetime="2015-03-11" class="events__title">11 March</time>
+                  <p class="events__text">Berangkat ke jogja untuk technical meeting</p>
+                </a>
+              </li>
+              <li class="events__item">
+                <a href="#event" class="events__link" data-eventId="5436">
+                  <time datetime="2015-03-21" class="events__title">21 March</time>
+                  <p class="events__text">Berangkat ke jogja untuk technical meeting</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <footer class="agenda__footer">
+            <a class="agenda__add-new-btn" href="#addnew">+ Add new agenda</a>
+          </footer>
+        </div>
+      </aside>
+
+    </main>
+    
+<!-- END MAIN -->
+
+  </div>
+
+</body>
+</html>

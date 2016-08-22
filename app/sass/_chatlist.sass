@@ -1,0 +1,108 @@
+// 
+// CHAT LIST
+// 
+
+.chatlist-wrapper
+  padding: 20px 30px
+  float: left
+  width: 28%
+
+.chatlist
+  background-color: #fff
+  +round(3px)
+  +shadow()
+  &__header
+    margin: 0 15px
+    padding: 10px 0
+    border-bottom: 1px solid #ecf0f2
+  &__title
+    float: left
+    color: $primary-color
+    font-size: 16px
+    font-weight: bold
+    line-height: 40px
+  &__new-button
+    float: right
+    color: $text-color
+    background-color: #d6e3ec
+    padding: 12px 30px
+    font-size: 14px
+    font-weight: bold
+    text-align: center
+    text-transform: uppercase
+    +round(3px)
+    &:hover
+      background-color: lighten(#d6e3ec, 5%)
+  &__content
+    height: calc(100vh - #{$top-height} - #{$chathead-height} - #{$chat-padding})
+    min-height: 467px
+    overflow-y: auto
+    margin-top: -1px
+  &__item-dialog
+    padding: 14px
+    cursor: pointer
+    position: relative
+    &--active
+      background-color: $background-color
+    &:hover
+      background-color: darken(#fff, 5%)
+    &--shaded
+      .dialog__name
+        color: $text-color
+      .dialog__preview
+        color: #c9d6df
+    &--notify:before
+      font-size: 12px
+      font-weight: bold
+      line-height: 16px
+      position: absolute
+      top: 10px
+      left: 40px
+      display: block
+      overflow: hidden
+      +size(20px)
+      padding: 2px
+      content: attr(data-notify)
+      text-align: center
+      text-overflow: ellipsis
+      color: #fff
+      background-color: #3198db
+      box-shadow: 0 2px 10px rgba(49, 152, 219, .5)
+      +round()
+
+.dialog
+  &__photo
+    @extend .account__avatar
+    margin-right: 10px
+  &__data
+    float: left
+    letter-spacing: 0px
+    width: calc(100% - 42px - 12px)
+  &__name
+    position: relative
+    color: #34495e
+    font-size: 16px
+    font-weight: bold
+    line-height: 25px
+    +crop-text()
+    padding-right: 13px
+  &__status
+    position: absolute
+    right: 2px
+    top: 9px
+    +size(8px)
+    +round()
+    background-color: #d4e1ea
+    box-shadow: 0 1px 5px #c9d6df
+    &--online
+      background-color: #51dacf
+      box-shadow: 0 2px 4px #51dacf
+  &__preview
+    font-size: 12px
+    &--text
+      float: left
+      width: 60%
+      +crop-text()
+    &--time
+      color: #c9d6df
+      float: right
